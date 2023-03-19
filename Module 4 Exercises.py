@@ -33,9 +33,9 @@ print("Im thinking of a word that has ", (len(word)), "letters in it.")
 #player guess the word
 guess = input("\nGuess a letter of the random word Im thinking of: ")
 #the player gets five chances to ask if a letter is in the word
-chance = 4
+chance = 5
 
-while ( chance > 0):
+while ( chance > 1):
 	chance -= 1
 	for letter in guess:
 		if letter.lower() in word:
